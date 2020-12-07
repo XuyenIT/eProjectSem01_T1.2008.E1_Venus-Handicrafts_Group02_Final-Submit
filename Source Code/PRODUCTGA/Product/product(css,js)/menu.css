@@ -1,0 +1,53 @@
+/*Phần cấu tạo menu bar*/
+    #menu ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                max-width: 35%;
+                background-color: white;
+                height: 880px; /* chiều cao 850px */
+                position: absolute; 
+                border-right-style : solid;
+                border-right-color : #F4DB96;
+             }
+    #menu li {
+                width: auto;
+                height: 45px;
+                line-height: 45px;
+                border-bottom: 1px solid whitesmoke;
+                padding: 0 1em;
+                text-align: left;
+                font-size: 1.1vw;
+             }
+    #menu li a {
+                display: block;
+                color: black;
+                padding: 8px 16px;
+                text-decoration: none;
+                font-size: 1.1vw;
+               }
+    #menu li:hover {
+                background-color: #F4DB96;
+                font-weight: bold;
+                color: black; 
+                    }
+    
+/*-------------Under product------------------*/
+    .underbackground{
+                border: none;
+                width:100%; 
+                height:190px;
+                margin-top: 80px;
+                margin-bottom: 50px;
+                position: relative;
+                background-image: url("../../Images/blurbackgr.jpg");
+                background-repeat: no-repeat;
+                background-size: 100%;
+                padding: 5px 20px 0px 20px;
+                text-align: center;
+                text-decoration: black;
+                font-family: 'Times New Roman';
+                font-size: 4.5vw;
+                
+                    }
+    

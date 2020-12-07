@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+}
+
+  .header1{
+      box-shadow: 0px 0px 10px black;
+      padding: 29px;  
+      width: 100%;
+      z-index: 4;
+
+  }
+  .container1 {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 95%;
+    }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+  .a1{
+    padding: 20px 8px 40px 30px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    margin-left: 100px;
+    
+}
+
+  .side{
+    position: absolute;
+    background-color: white;
+    right: 0;
+    top: 165px;
+    transition: 1s;
+    height: 100%;
+    width: 0;
+    overflow: scroll;
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 2;
+
+}
+.change1{
+  text-align: center;
+}
+
+#column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 30px;
+}
+@media screen and (max-width: 650px) {
+  #column {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+
+.container2 {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: gray;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: black;
+}
+/* our Mission*/
+.Mission{
+
+  padding: 30px;
+  width: 100%;
+  font-size: 25px;
+}
+
+/*See All Picture*/
+#Mindset{
+ width: 100%;
+ display: inline-block;
+ font-size: 25px;
+ color:black;
+}
+ 
+.column1 {
+  width: 20%;
+  margin-bottom: 16px;
+  padding: 10px;
+  background-color: orange;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+.column1:hover {
+  background-color: black;
+}
+@media screen and (max-width: 650px) {
+  .column1 {
+    width: 30%;
+    display: block;
+  }
+}
+
+footer{
+  background-color: lightgray;
+  font-size: 15px;
+  padding: 50px;
+  font-family: 'Times New Roman', Times, serif;
+}
+/* Background image Home Sticky*/
+.sticky{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  z-index: -3;
+}
+
+.backgroundform{
+  background-color: white;
+  width: 100%;
+  padding: 30px;
+  font-size: 20px;
+}
+/*Dropdown navbar*/
+.dropdown {
+  position: none;
+  display: inline-block;
+  padding-right: 150px;
+  /* box-shadow: 1px 1px 1px 1px black; */
+ 
+}
+
+.dropdown-content {
+  display: none ;
+  position: absolute;
+  margin-left: 250px;
+  margin-top: -110px;
+  min-width: 400px;
+  min-height: 500px;
+  padding: 40px 60px;
+
+}
+.dropdown-content a {
+  color: black;
+  padding: 0px 20px 10px;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  z-index: 1;
+
+}
+
+.dropdown:hover .dropdown-content  {
+  display: block;
+  text-decoration: none;
+ 
+}
+.dropdown-content a:hover {
+  color: orange;
+  text-decoration: none;
+}
+.side a:hover{
+  color: orange;
+  text-decoration: none;
+}
+.row p{
+  font-size: 20px;
+}

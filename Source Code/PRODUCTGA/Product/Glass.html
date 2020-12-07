@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="product(css,js)/menu.css"/>
+    <link rel="stylesheet" href="product(css,js)/product-images.css"/>
+    <link rel="stylesheet" href="product(css,js)/main.css">
+    <script src="product(css,js)/main.js"></script>
+</head>
+<body>
+    <!--Menu Icon-->
+  <div class="header1">
+    <div onclick="myChange(this)"> 
+      <div class="container1" onclick="myFunction(this)">
+        <div class="bar1" style="margin-top: 40px"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div> 
+      </div>  
+    </div>
+    <img src="../Images/logo.png" alt="logo" style="width:430px; height: 110px; margin-top: -70px; z-index: 1 ;" >
+  </div>
+  <br>
+
+<section>
+<!-----------------------Menu.css (sản phẩm)------------------------------------------->
+    <div id="menu">
+ <ul>
+  <li><a href="Wood.html">Wood Handicrafts</a></li>
+ <li><a href="Brass.html">Brass Handicrafts</a></li>
+ <li><a href="Iron.html">Iron Handicrafts</a></li>
+ <li><a href="Glass.html">Glass Handicrafts</a></li>
+ <li><a href="Aluminum.html">Aluminium Handicrafts</a></li>
+ <li><a href="Decor.html">Handicrafts Decorative</a></li>
+ <li><a href="Tableware.html">Tables Wares</a></li>
+ <li><a href="Homedecor.html">Home Décor</a></li>
+ </ul>
+    </div>
+<!------------------------Title and search product----------------------------------------------->
+<nav class="navbar navbar-default" style="padding-bottom: 10px">
+    <div class="container-fluid">
+      <div class="navbar-header" style="padding-left: 2px">
+        <a class="navbar-brand" style="font-size: 40px; font-family: Arial; color: black">Glass Handicraft</a>
+      </div>
+      <ul class="nav navbar-nav"  style="float:right; padding-right: 65px; font-size: 12px">
+        <!---------------------Check box color------------------------------->
+        <li class="dropdown1"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Color <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li class=" keep-open">
+              <div class="checkbox">
+                  <label><input type="checkbox" value="">Natural Brown</label>
+                </div>
+            </li>
+            <li class=" keep-open">
+              <div class="checkbox">
+                  <label><input type="checkbox" value="">Natural Yellow</label>
+                </div>
+            </li>
+            <li class=" keep-open">
+              <div class="checkbox">
+                  <label><input type="checkbox" value="">Natural Blue</label>
+                </div>
+            </li>
+            <li class=" keep-open">
+              <div class="checkbox">
+                  <label><input type="checkbox" value="">Retro Red</label>
+                </div>
+            </li>
+            <li><a class="btn">select</a></li>
+          </ul>
+        </li>
+        <!-------------------Check box material---------------------------->
+        <li class="dropdown1"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Material<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li class=" keep-open">
+              <div class="checkbox">
+                  <label><input type="checkbox" value="">Glass Osydi</label>
+                </div>
+            </li>
+            <li class=" keep-open">
+              <div class="checkbox">
+                  <label><input type="checkbox" value="">Glass Crash</label>
+                </div>
+            </li>
+            <li class=" keep-open">
+              <div class="checkbox">
+                  <label><input type="checkbox" value="">Conclue Glass</label>
+                </div>
+            </li>
+            <li><a class="btn">select</a></li>
+          </ul>
+        </li>
+        <!------------------------Check box concept------------------------------------------------------>
+        <li class="dropdown1"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Concept<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li class=" keep-open">
+              <div class="checkbox">
+                  <label><input type="checkbox" value="">Status</label>
+                </div>
+            </li>
+            <li class=" keep-open">
+              <div class="checkbox">
+                  <label><input type="checkbox" value="">Natural Hand</label>
+                </div>
+            </li>
+            <li class=" keep-open">
+              <div class="checkbox">
+                  <label><input type="checkbox" value="">Home Stay</label>
+                </div>
+            </li>
+            <li><a class="btn">select</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!--Jquery script-->
+      <script>
+        $('.keep-open').click(function(e) {
+          if (/input|label/i.test(e.target.tagName)){
+            var parent = $(e.target).parent();
+            if(parent.hasClass('checkbox')){
+              var checkbox = parent.find('input[type=checkbox]');
+              checkbox.prop("checked", !checkbox.prop("checked"));
+              return false;
+            }
+          }
+        });
+      </script>
+     
+    </div>
+ </nav>
+<!---------------------------Product-images.css (hình sản phẩm)------------------------------->
+<div class="grid-container">
+    
+       <div class="item1"> <!--Product 1-->
+           <div class="box-images">
+           <img src="../Images/Glass/image1.png" alt="HST03">
+           </div>
+           <div class="box-introduce">
+            HANUKKAH SPINNING TOP <br>
+            HST 03
+           </div>
+           <div class="box-detail-buy">
+              <!-- button -->
+              <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Model-1">Detail</button>
+              <!-- Modal -->
+              <div class="modal fade" id="Model-1" role="dialog">
+              <div class="modal-dialog">
+              <!-- Modal content-->
+              <div class="modal-content">
+                  <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">HANUKKAH SPINNING TOP</h4>
+                  </div>
+                <div class="modal-body" style="height: 500px; width: 500px">
+                  <div class="img-p-style">
+                    <img src="../Images/Glass/image1.png" alt="HST03">
+                    <p> 
+                      The <B>Hanukkah Spinning</B> was created in Israel. 
+                      The material was choosen carefully, in order to get a perfect shape
+                    </p>
+                  </div>
+                </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+              </div>
+              </div>
+              </div>
+               <!--Inquiry-->
+               <a href="../orderform/Order.html" target="_blank" type="button" class="btn btn-lg" style="float: right">Inquiry</a>
+            </div>
+       </div>
+    <div class="item2"> <!--Product 2-->
+           <div class="box-images">
+           <img src="../Images/Glass/image2.png" alt="MC04">
+           </div>
+           <div class="box-introduce">
+            MEZUZAH CASE <br>
+            MC 04
+           </div>
+           <div class="box-detail-buy">
+            <!-- button -->
+            <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Model-2">Detail</button>
+            <!-- Modal -->
+            <div class="modal fade" id="Model-2" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">MEZUZAH CASE</h4>
+                </div>
+              <div class="modal-body" style="height: 500px; width: 500px">
+                <div class="img-p-style">
+                  <img src="../Images/Glass/image2.png" alt="MC04">
+                  <p> 
+                    The <B>Mezuzah Case</B> is a piece of parchment called a <b>klaf</b> 
+                    contained in a decorative case and inscribed with specific
+                    <i>Hebrew</i> verses from the <i>Torah</i>.
+                  </p>
+                </div>
+              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+            </div>
+            </div>
+             <!--Inquiry-->
+             <a href="../orderform/Order.html" target="_blank" type="button" class="btn btn-lg" style="float: right">Inquiry</a>
+          </div>
+    </div>  
+    <div class="item3"> <!--Product 3-->
+           <div class="box-images">
+           <img src="../Images/Glass/image3.png" alt="RHL05">
+           </div>
+           <div class="box-introduce">
+            ROW HANGING LAMP<br>
+            RHL 05
+           </div>
+           <div class="box-detail-buy">
+            <!-- button -->
+            <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Modal-3">Detail</button>
+            <!-- Modal -->
+            <div class="modal fade" id="Modal-3" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">ROW HANGING LAMP</h4>
+                </div>
+              <div class="modal-body" style="height: 500px; width: 500px">
+                <div class="img-p-style">
+                  <img src="../Images/Glass/image3.png" alt="RHL05">
+                  <p> 
+                    The <B>Row Hanging Lamp</B> was made in Poland. Every detail of it was
+                    made from single stained Glass, hang on a stiky row. 
+                  </p>
+                </div>
+              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+            </div>
+            </div>
+             <!--Inquiry-->
+             <a href="../orderform/Order.html" target="_blank" type="button" class="btn btn-lg" style="float: right">Inquiry</a>
+          </div>
+    </div>
+    <div class="item4"> <!--product 4-->
+           <div class="box-images">
+           <img src="../Images/Glass/image4.png" alt="SCH204">
+           </div>
+           <div class="box-introduce">
+            HANGING LAMP<br>
+            HL 06
+           </div>
+           <div class="box-detail-buy">
+            <!-- button -->
+            <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Modal-4">Detail</button>
+            <!-- Modal -->
+            <div class="modal fade" id="Modal-4" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">HANGING LAMP</h4>
+                </div>
+              <div class="modal-body" style="height: 500px; width: 500px">
+                <div class="img-p-style">
+                  <img src="../Images/Glass/image4.png" alt="HL06">
+                  <p> 
+                    The <B>Hanging Lamp</B> was made in Poland. Every detail of it was
+                    made from single stained Glass, hang by itself
+                  </p>
+                </div>
+              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+            </div>
+            </div>
+             <!--Inquiry-->
+             <a href="../orderform/Order.html" target="_blank" type="button" class="btn btn-lg" style="float: right">Inquiry</a>
+          </div>
+    </div>
+    <div class="item5"> <!--Product 5-->
+           <div class="box-images">
+           <img src="../Images/Glass/image5.png" alt="CG07">
+           </div>
+           <div class="box-introduce">
+            CROCKERY GLASS<br>
+            CG 07
+           </div>
+           <div class="box-detail-buy">
+            <!-- button -->
+            <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Modal-5">Detail</button>
+            <!-- Modal -->
+            <div class="modal fade" id="Modal-5" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">CROCKERY GLASS</h4>
+                </div>
+              <div class="modal-body" style="height: 500px; width: 500px">
+                <div class="img-p-style">
+                  <img src="../Images/Glass/image5.png" alt="CG07">
+                  <p> 
+                    The <B>GLass Crokery</B> was mafde in Israel,<br>
+                     propose to be shine and deep to the old time
+                  </p>
+                </div>
+              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+            </div>
+            </div>
+             <!--Inquiry-->
+             <a href="../orderform/Order.html" target="_blank" type="button" class="btn btn-lg" style="float: right">Inquiry</a>
+          </div>
+    </div>
+    <div class="item6"> <!--Product 6-->
+           <div class="box-images">
+           <img src="../Images/Glass/image6.png" alt="TB08">
+           </div>
+           <div class="box-introduce">
+            THAI BOWL<br>
+            TB 08
+           </div>
+           <div class="box-detail-buy">
+            <!-- button -->
+            <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Modal-6">Detail</button>
+            <!-- Modal -->
+            <div class="modal fade" id="Modal-6" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">THAI BOWL</h4>
+                </div>
+              <div class="modal-body" style="height: 500px; width: 500px">
+                <div class="img-p-style">
+                  <img src="../Images/Glass/image6.png" alt="TB08">
+                  <p> 
+                    The <B>THAI BOWL</B>. As the name of it, it was created from Thai's old luxury boat.
+                    Every detail of this piece, making a hit to the colletors.
+                  </p>
+                </div>
+              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+            </div>
+            </div>
+             <!--Inquiry-->
+             <a href="../orderform/Order.html" target="_blank" type="button" class="btn btn-lg" style="float: right">Inquiry</a>
+          </div>
+    </div>
+    <div class="item7"> <!--product 7-->
+           <div class="box-images">
+           <img src="../Images/Glass/image7.png" alt="PSG09">
+           </div>
+           <div class="box-introduce">
+            PURE SEA GLASS<br>
+            PSG 09
+           </div>
+           <div class="box-detail-buy">
+            <!-- button -->
+            <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Modal-7">Detail</button>
+            <!-- Modal -->
+            <div class="modal fade" id="Modal-7" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">PURE SEA GLASS</h4>
+                </div>
+              <div class="modal-body" style="height: 500px; width: 500px">
+                <div class="img-p-style">
+                  <img src="../Images/Glass/image7.png" alt="PSG09">
+                  <p> 
+                    The <B>PURE SEA GLASS</B>- This speacial piece was made from Japan.
+                    The idea was take from the harsh volcano <b>Death Sea</b>. Saphere Blue lead us to anither demension
+                  </p>
+                </div>
+              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+            </div>
+            </div>
+             <!--Inquiry-->
+             <a href="../orderform/Order.html" target="_blank" type="button" class="btn btn-lg" style="float: right">Inquiry</a>
+          </div>
+    </div>  
+    <div class="item8"> <!--Product 8-->
+           <div class="box-images">
+           <img src="../Images/Glass/image8.png" alt="CO21">
+           </div>
+           <div class="box-introduce">
+            CHRISTMAS ORNEMENT<br>
+            CO-21
+           </div>
+           <div class="box-detail-buy">
+            <!-- button -->
+            <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Modal-8">Detail</button>
+            <!-- Modal -->
+            <div class="modal fade" id="Modal-8" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">CHRISTMAS ORNEMENT</h4>
+                </div>
+              <div class="modal-body" style="height: 500px; width: 500px">
+                <div class="img-p-style">
+                  <img src="../Images/Glass/image8.png" alt="CO 21">
+                  <p> 
+                    The <B>CHRISTMAS ORNEMENT</B>. This unique piece was apart from the <i>Harley Cave</i>, all material made into 
+                    the North Star on the Sky
+                  </p>
+                </div>
+              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+            </div>
+            </div>
+             <!--Inquiry-->
+             <a href="../orderform/Order.html" target="_blank" type="button" class="btn btn-lg" style="float: right">Inquiry</a>
+          </div>
+    </div>
+
+  </div>
+</section>
+<section class="underbackground">
+  <q>An art you know,
+     A little soul you found</q><br>
+    <cite>-Henry Venus-</cite>
+</section>
+
+<!--FOOTER -->
+<footer >
+  <div class="row">
+      <div class="col-lg-3">
+      <img src="../Images/logo.png" alt="logo" height="80px">
+    </div>
+    <div class="col-lg-3">
+      <p> <span class="glyphicon glyphicon-envelope"></span> <br>
+        Email <br>
+        service@venushandicraft.com</p> 
+      <p> <span class="glyphicon glyphicon-map-marker"></span> <br>
+        Address <br>
+        Traditional Village, Thanh Hoa Province, Viet Nam</p> 
+    </div>
+    <div class="col-lg-2">
+      <p> <a href="../../HOME/home.html">Home</a> </p>
+      <p> <a href="Wood.html">All product</a> </p>
+      <p> <a href="../../STORY/company.html">Company</a> </p>
+      <p> <a href="../../STORY/craftmanship.html">Craftmanship</a> </p>
+    </div>
+    <div class="col-lg-2">
+      <p> <a href="../Gallery/Gallery.html">Gallery</a> </p>
+      <p> <a href="../../SITEMAP/sitemap.html">Site Map</a> </p>
+      <p> <a href="../../CONTACTUS/contactus.html">Contact Us</a> </p>
+      <p> <a href="../../STORY/founder.html">Founder</a></p>
+      
+    </div>
+    <div class="col-lg-2">
+      <p>More</p>
+      <p> <a target="_blank" href="../../CONTACTUS/signup.html">Login</a> </p>
+      <p> <a target="_blank" href="../../CONTACTUS/trade.html">Trade B2B</a> </p>
+    </div>
+  </div>
+  </footer>
+
+<!--NAVBAR Footer -->
+    <div class="row">
+      <div class="side" id="open">
+             <div class="col-lg-7" >
+            <a class="a1" href="../../HOME/home.html">Home</a>
+            <div class="dropdown">
+            <a class="a1" href="Wood.html">All Products</a>
+            <div class="dropdown-content">
+              <a href="Wood.html">Wood Handicraft</a> 
+              <a href="Brass.html">Brass Handicraft</a>
+              <a href="Iron.html">IronHandicraft</a> 
+              <a href="Wood.html">Glass Handicraft</a>
+              <a href="Wood.html">AluminumHandicraft</a> 
+              <a href="Decor.html">Handicraft Dicorative</a>
+              <a href="Tableware.html">Table Wares</a>
+              <a href="Homedecor.html">Home Décor</a>
+              </div>
+            </div> <br>
+            <div class="dropdown" style="padding-right: 100px;">
+              <a class="a1" target="_blank" href="../../STORY/company.html">Story</a>
+              <div class="dropdown-content">
+              <a target="_blank" href="../../STORY/company.html">Company</a> <br>
+              <a target="_blank" href="../../STORY/craftmanship.html">Craftmanship</a>
+              </div>
+            </div>
+            
+            <a class="a1" target="_blank" href="../Gallery/Gallery.html">Gallery</a>
+            <a class="a1" target="_blank" href="../../SITEMAP/sitemap.html">Site Map</a>
+            <a class="a1" target="_blank" href="../../CONTACTUS/contactus.html">Contact Us</a>
+             </div>
+        
+      <div class="col-lg-4" style="color: black; font-size: 20px; padding-top: 20px;"  >
+         <p style="margin-left: 150px;"> <span class="glyphicon glyphicon-envelope"></span> <br>
+            Email <br>
+            service@venushandicraft.com</p> 
+          <p style="margin-left: 150px;"> <span class="glyphicon glyphicon-map-marker"></span> <br>
+            Address <br>
+            Traditional Village, Thanh Hoa Province, Viet Nam</p> 
+      </div>
+      </div>
+     </div>
+
+</body>
+</html>

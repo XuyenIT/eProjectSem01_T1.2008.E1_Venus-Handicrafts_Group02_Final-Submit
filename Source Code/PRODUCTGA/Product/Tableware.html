@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="product(css,js)/menu.css"/>
+    <link rel="stylesheet" href="product(css,js)/product-images.css"/>
+    <link rel="stylesheet" href="product(css,js)/main.css">
+    <script src="product(css,js)/main.js"></script>
+
+</head>
+<body>
+    <!--Menu Icon-->
+  <div class="header1">
+    <div onclick="myChange(this)"> 
+      <div class="container1" onclick="myFunction(this)">
+        <div class="bar1" style="margin-top: 40px"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div> 
+      </div>  
+    </div>
+    <img src="../Images/logo.png" alt="logo" style="width:430px; height: 110px; margin-top: -70px; z-index: 1 ;" >
+  </div>
+  <br>
+ 
+<section>
+<!-----------------------Menu.css (sản phẩm)------------------------------------------->
+    <div id="menu">
+ <ul>
+  <li><a href="Wood.html">Wood Handicrafts</a></li>
+ <li><a href="Brass.html">Brass Handicrafts</a></li>
+ <li><a href="Iron.html">Iron Handicrafts</a></li>
+ <li><a href="Glass.html">Glass Handicrafts</a></li>
+ <li><a href="Aluminum.html">Aluminium Handicrafts</a></li>
+ <li><a href="Decor.html">Handicrafts Decorative</a></li>
+ <li><a href="Tableware.html">Tables Wares</a></li>
+ <li><a href="Homedecor.html">Home Décor</a></li>
+ </ul>
+    </div>
+<!------------------------Title and search product----------------------------------------------->
+<nav class="navbar navbar-default" style="padding-bottom: 10px">
+    <div class="container-fluid">
+      <div class="navbar-header" style="padding-left: 2px">
+        <a class="navbar-brand" style="font-size: 40px; font-family: Arial; color: black">Table Wares</a>
+      </div>
+      <ul class="nav navbar-nav"  style="float:right; padding-right: 65px; font-size: 12px">
+        <!---------------------Check box color------------------------------->
+        <li class="dropdown1"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Color <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li class=" keep-open">
+              <div class="checkbox">
+                  <label><input type="checkbox" value="">Natural black</label>
+                </div>
+            </li>
+            <li class=" keep-open">
+              <div class="checkbox">
+                  <label><input type="checkbox" value="">Natural Yellow</label>
+                </div>
+            </li>
+            <li class=" keep-open">
+              <div class="checkbox">
+                  <label><input type="checkbox" value="">Natural Blue</label>
+                </div>
+            </li>
+            <li class=" keep-open">
+              <div class="checkbox">
+                  <label><input type="checkbox" value="">Retro Red</label>
+                </div>
+            </li>
+            <li><a class="btn">select</a></li>
+          </ul>
+        </li>
+        <!-------------------Check box material---------------------------->
+        <li class="dropdown1"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Material<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li class=" keep-open">
+              <div class="checkbox">
+                  <label><input type="checkbox" value="">Ceramic</label>
+                </div>
+            </li>
+            <li class=" keep-open">
+              <div class="checkbox">
+                  <label><input type="checkbox" value="">Cermic BT</label>
+                </div>
+            </li>
+            <li class=" keep-open">
+              <div class="checkbox">
+                  <label><input type="checkbox" value="">Conclue Ceramic</label>
+                </div>
+            </li>
+            <li><a class="btn">select</a></li>
+          </ul>
+        </li>
+        <!------------------------Check box concept------------------------------------------------------>
+        <li class="dropdown1"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Concept<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li class=" keep-open">
+              <div class="checkbox">
+                  <label><input type="checkbox" value="">Luxury</label>
+                </div>
+            </li>
+            <li class=" keep-open">
+              <div class="checkbox">
+                  <label><input type="checkbox" value="">Natural Hand</label>
+                </div>
+            </li>
+            <li class=" keep-open">
+              <div class="checkbox">
+                  <label><input type="checkbox" value="">Home Stay</label>
+                </div>
+            </li>
+            <li><a class="btn">select</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!--Jquery script-->
+      <script>
+        $('.keep-open').click(function(e) {
+          if (/input|label/i.test(e.target.tagName)){
+            var parent = $(e.target).parent();
+            if(parent.hasClass('checkbox')){
+              var checkbox = parent.find('input[type=checkbox]');
+              checkbox.prop("checked", !checkbox.prop("checked"));
+              return false;
+            }
+          }
+        });
+      </script>
+
+    </div>
+ </nav>
+<!---------------------------Product-images.css (hình sản phẩm)------------------------------->
+<div class="grid-container">
+    
+       <div class="item1"> <!--Product 1-->
+           <div class="box-images">
+           <img src="../Images/Tableware/image1.png" alt="SET1">
+           </div>
+           <div class="box-introduce">
+            BLUE DIAMON<br>
+            SET 1
+           </div>
+           <div class="box-detail-buy">
+              <!-- button -->
+              <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Model-1">Detail</button>
+              <!-- Modal -->
+              <div class="modal fade" id="Model-1" role="dialog">
+              <div class="modal-dialog">
+              <!-- Modal content-->
+              <div class="modal-content">
+                  <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title"> BLUE DIAMOND</h4>
+                  </div>
+                <div class="modal-body" style="height: 500px; width: 500px">
+                  <div class="img-p-style">
+                    <img src="../Images/Tableware/image1.png" alt="IET 201">
+                    <p> 
+                      The <B>Blue Diamond</B> <br>
+                      High Fashion Retro Green Nordic Ceramic Tableware Set Dinnerware Set Bowl Plate Soup Bowl Set Modern Style
+                    </p>
+                  </div>
+                </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+              </div>
+              </div>
+              </div>
+              <!--Inquiry-->
+              <a href="../orderform/Order.html" target="_blank" type="button" class="btn btn-lg" style="float: right">Inquiry</a>
+            </div>
+       </div>
+    <div class="item2"> <!--Product 2-->
+           <div class="box-images">
+           <img src="../Images/Tableware/image2.png" alt="SET 2">
+           </div>
+           <div class="box-introduce">
+            KINGLANG<br>
+            SET 2
+           </div>
+           <div class="box-detail-buy">
+            <!-- button -->
+            <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Model-2">Detail</button>
+            <!-- Modal -->
+            <div class="modal fade" id="Model-2" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">KINGLANG</h4>
+                </div>
+              <div class="modal-body" style="height: 500px; width: 500px">
+                <div class="img-p-style">
+                  <img src="../Images/Tableware/image2.png" alt="DP 202">
+                  <p> 
+                    The <B>KINGLANG</B> <br>
+                    From 2 or 4 or 6 person set Golden edge plates Ceramic Dinnerware Set NEW Blue Golden Ceramic Tableware Set
+                  </p>
+                </div>
+              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+            </div>
+            </div>
+             <!--Inquiry-->
+             <a href="../orderform/Order.html" target="_blank" type="button" class="btn btn-lg" style="float: right">Inquiry</a>
+          </div>
+    </div>  
+    <div class="item3"> <!--Product 3-->
+           <div class="box-images">
+           <img src="../Images/Tableware/image3.png" alt="SET 3">
+           </div>
+           <div class="box-introduce">
+            KINGLANG DIOR<br>
+            SET 3
+           </div>
+           <div class="box-detail-buy">
+            <!-- button -->
+            <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Modal-3">Detail</button>
+            <!-- Modal -->
+            <div class="modal fade" id="Modal-3" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">KINGLANG DIOR</h4>
+                </div>
+              <div class="modal-body" style="height: 500px; width: 500px">
+                <div class="img-p-style">
+                  <img src="../Images/Tableware/image3.png" alt="RB 203">
+                  <p> 
+                    The <B>KINGLANG DIOR</B> <br>
+                    This is the upgrade from KINGLANG, cooperate with <b>DIOR</b>
+                  </p>
+                </div>
+              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+            </div>
+            </div>
+             <!--Inquiry-->
+             <a href="../orderform/Order.html" target="_blank" type="button" class="btn btn-lg" style="float: right">Inquiry</a>
+          </div>
+    </div>
+    <div class="item4"> <!--product 4-->
+           <div class="box-images">
+           <img src="../Images/Tableware/image4.png" alt="SET 4">
+           </div>
+           <div class="box-introduce">
+            18Th STREET<br>
+            SET 4
+           </div>
+           <div class="box-detail-buy">
+            <!-- button -->
+            <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Modal-4">Detail</button>
+            <!-- Modal -->
+            <div class="modal fade" id="Modal-4" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">18Th STREET</h4>
+                </div>
+              <div class="modal-body" style="height: 500px; width: 500px">
+                <div class="img-p-style">
+                  <img src="../Images/Tableware/image4.png" alt="SET 4">
+                  <p> 
+                    The <B>18Th STREET</B> <br>
+                    16-Piece Dinnerware Set
+                  </p>
+                </div>
+              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+            </div>
+            </div>
+             <!--Inquiry-->
+             <a href="../orderform/Order.html" target="_blank" type="button" class="btn btn-lg" style="float: right">Inquiry</a>
+          </div>
+    </div>
+    <div class="item5"> <!--Product 5-->
+           <div class="box-images">
+           <img src="../Images/Tableware/image5.png" alt="SET5">
+           </div>
+           <div class="box-introduce">
+            BLACK MALAMINE<br>
+            SET 5
+           </div>
+           <div class="box-detail-buy">
+            <!-- button -->
+            <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Modal-5">Detail</button>
+            <!-- Modal -->
+            <div class="modal fade" id="Modal-5" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">BLACK MALAMINE</h4>
+                </div>
+              <div class="modal-body" style="height: 500px; width: 500px">
+                <div class="img-p-style">
+                  <img src="../Images/Tableware/image5.png" alt="WAOF205">
+                  <p> 
+                    The <B>Rocco Black Melamine</B> <br>
+                    Created by famous Company in Korea. This would bring you to the anciant feelings
+                </div>
+              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+            </div>
+            </div>
+             <!--Inquiry-->
+             <a href="../orderform/Order.html" target="_blank" type="button" class="btn btn-lg" style="float: right">Inquiry</a>
+          </div>
+    </div>
+    <div class="item6"> <!--Product 6-->
+           <div class="box-images">
+           <img src="../Images/Tableware/image6.png" alt="SET 6">
+           </div>
+           <div class="box-introduce">
+            STANSPORT<br>
+            SET 6
+           </div>
+           <div class="box-detail-buy">
+            <!-- button -->
+            <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Modal-6">Detail</button>
+            <!-- Modal -->
+            <div class="modal fade" id="Modal-6" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">STANSPORT</h4>
+                </div>
+              <div class="modal-body" style="height: 500px; width: 500px">
+                <div class="img-p-style">
+                  <img src="../Images/Tableware/image6.png" alt="BL206">
+                  <p> 
+                    The <B>STANSPORT</B> tablewares is the most speacial <br>
+                    Deluxe 24-Piece Enamel Tableware Set: Plates, Bowls, Mugs & Utensils.
+                  </p>
+                </div>
+              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+            </div>
+            </div>
+             <!--Inquiry-->
+             <a href="../orderform/Order.html" target="_blank" type="button" class="btn btn-lg" style="float: right">Inquiry</a>
+          </div>
+    </div>
+    <div class="item7" hidden> <!--product 7-->
+           <div class="box-images">
+           <img src="Images/Iron/image7.png" alt="IKJ207">
+           </div>
+           <div class="box-introduce">
+            INDIA KAMI JOU<br>
+            IKJ 207
+           </div>
+           <div class="box-detail-buy">
+            <!-- button -->
+            <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Modal-7">Detail</button>
+            <!-- Modal -->
+            <div class="modal fade" id="Modal-7" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">INDIA KAMI JOU</h4>
+                </div>
+              <div class="modal-body" style="height: 500px; width: 500px">
+                <div class="img-p-style">
+                  <img src="Images/Iron/image7.png" alt="IKJ207">
+                  <p> 
+                    The <B>India Kami Jou</B>, also known as a divinity and royalty sumbol. 
+                    A traditional symbol of divinity and royalty. For centuries, India has regarded the majestic royal beast,
+                     <i>the Elephent</i>.
+                  </p>
+                </div>
+              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+            </div>
+            </div>
+             <!--Inquiry-->
+             <a href="../orderform/Order.html" target="_blank" type="button" class="btn btn-lg" style="float: right">Inquiry</a>
+          </div>
+    </div>  
+    <div class="item8" hidden> <!--Product 8-->
+           <div class="box-images">
+           <img src="Images/Iron/image8.png" alt="none">
+           </div>
+           <div class="box-introduce">
+            DANCING KAMI<br>
+            DK 208
+           </div>
+           <div class="box-detail-buy">
+            <!-- button -->
+            <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Modal-8">Detail</button>
+            <!-- Modal -->
+            <div class="modal fade" id="Modal-8" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">DANCING KAMI</h4>
+                </div>
+              <div class="modal-body" style="height: 500px; width: 500px">
+                <div class="img-p-style">
+                  <img src="Images/Iron/image8.png" alt="SCH 204">
+                  <p> 
+                    The <B>Dancing kami</B> was made by a popular Craftman-<i>Shlik Scope</i>.
+                    The sculpture is symbolic of Shiva as the lord of dance and dramatic arts.
+                    It typically shows Shiva dancing in one of the Natya Shastra 
+                  </p>
+                </div>
+              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+            </div>
+            </div>
+             <!--Inquiry-->
+             <a href="../orderform/Order.html" target="_blank" type="button" class="btn btn-lg" style="float: right">Inquiry</a>
+          </div>
+    </div>
+
+  </div>
+</section> <!--Fun ad-->
+<section class="underbackground">
+  <q>An art you know,
+     A little soul you found</q><br>
+    <cite>-Henry Venus-</cite>
+</section>
+
+<!--FOOTER -->
+<footer >
+  <div class="row">
+      <div class="col-lg-3">
+      <img src="../Images/logo.png" alt="logo" height="80px">
+    </div>
+    <div class="col-lg-3">
+      <p> <span class="glyphicon glyphicon-envelope"></span> <br>
+        Email <br>
+        service@venushandicraft.com</p> 
+      <p> <span class="glyphicon glyphicon-map-marker"></span> <br>
+        Address <br>
+        Traditional Village, Thanh Hoa Province, Viet Nam</p> 
+    </div>
+    <div class="col-lg-2">
+      <p> <a href="../../HOME/home.html">Home</a> </p>
+      <p> <a href="Wood.html">All product</a> </p>
+      <p> <a href="../../STORY/company.html">Company</a> </p>
+      <p> <a href="../../STORY/craftmanship.html">Craftmanship</a> </p>
+    </div>
+    <div class="col-lg-2">
+      <p> <a href="../Gallery/Gallery.html">Gallery</a> </p>
+      <p> <a href="../../SITEMAP/sitemap.html">Site Map</a> </p>
+      <p> <a href="../../CONTACTUS/contactus.html">Contact Us</a> </p>
+      <p> <a href="../../STORY/founder.html">Founder</a></p>
+      
+    </div>
+    <div class="col-lg-2">
+      <p>More</p>
+      <p> <a target="_blank" href="../../CONTACTUS/signup.html">Login</a> </p>
+      <p> <a target="_blank" href="../../CONTACTUS/trade.html">Trade B2B</a> </p>
+    </div>
+  </div>
+  </footer>
+
+<!--NAVBAR Footer -->
+    <div class="row">
+      <div class="side" id="open">
+             <div class="col-lg-7" >
+            <a class="a1" href="../../HOME/home.html">Home</a>
+            <div class="dropdown">
+            <a class="a1" href="Wood.html">All Products</a>
+            <div class="dropdown-content">
+              <a href="Wood.html">Wood Handicraft</a> 
+              <a href="Brass.html">Brass Handicraft</a>
+              <a href="Iron.html">IronHandicraft</a> 
+              <a href="Wood.html">Glass Handicraft</a>
+              <a href="Wood.html">AluminumHandicraft</a> 
+              <a href="Decor.html">Handicraft Dicorative</a>
+              <a href="Tableware.html">Table Wares</a>
+              <a href="Homedecor.html">Home Décor</a>
+              </div>
+            </div> <br>
+            <div class="dropdown" style="padding-right: 100px;">
+              <a class="a1" target="_blank" href="../../STORY/company.html">Story</a>
+              <div class="dropdown-content">
+              <a target="_blank" href="../../STORY/company.html">Company</a> <br>
+              <a target="_blank" href="../../STORY/craftmanship.html">Craftmanship</a>
+              </div>
+            </div>
+            
+            <a class="a1" target="_blank" href="../Gallery/Gallery.html">Gallery</a>
+            <a class="a1" target="_blank" href="../../SITEMAP/sitemap.html">Site Map</a>
+            <a class="a1" target="_blank" href="../../CONTACTUS/contactus.html">Contact Us</a>
+             </div>
+        
+      <div class="col-lg-4" style="color: black; font-size: 20px; padding-top: 20px;"  >
+         <p style="margin-left: 150px;"> <span class="glyphicon glyphicon-envelope"></span> <br>
+            Email <br>
+            service@venushandicraft.com</p> 
+          <p style="margin-left: 150px;"> <span class="glyphicon glyphicon-map-marker"></span> <br>
+            Address <br>
+            Traditional Village, Thanh Hoa Province, Viet Nam</p> 
+      </div>
+      </div>
+     </div>
+
+</body>
+</html>

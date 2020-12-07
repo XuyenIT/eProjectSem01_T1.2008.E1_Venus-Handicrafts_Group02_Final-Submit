@@ -1,0 +1,94 @@
+/*-----------------GRID layout-----------------------*/
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+    background-color: white;
+    padding: 5px;
+    margin-left: 250px;
+    margin-right: 10px;
+    overflow: auto;
+  }
+  
+.grid-container > div {
+    max-width: 250px;
+    height: 350px ;
+    background-color: #F4DB96  ;
+    padding: 20px;
+    box-shadow: 5px 5px 3px gray;
+  }
+.navbar-default{
+  background-color: white;
+  border-color: white;
+  margin:0 10px 0px 250px;
+}
+/*----------------------Filter box (Dropdown checkbox--------------------*/
+.dropdown-menu {
+  padding: 5px;
+} 
+ li.checkbox{
+  padding: 5px ;
+}
+  
+/*--------------------Box images----------------------------*/
+.box-images {
+  max-width: 200px;;
+  padding: 0.5px;
+  border: 3px solid black;
+  margin: 2px;
+  float: top;
+}
+img {
+  width: 100%; 
+  height: auto;
+}
+
+/*---------------------Box introduce images--------------------*/
+.box-introduce {
+  width: 200px;
+  height: auto;
+  padding: 1px;
+  border: 3px solid #F4DB96 ;
+  margin: 2px;
+  font-family: Arial;
+  text-align: left;
+  float: inherit;
+}
+/*-------------Box-detail---------------*/
+.box-detail-buy{
+  width: 200px;
+  height: auto;
+  padding: 1px;
+  border: 3px solid #F4DB96 ; /*--Chỉnh sau--*/
+  margin: 2px;
+  float: inherit;
+}
+  /*------Button show detail, buy------*/
+  .btn{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 2px 20px 2px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    font-family: Arial;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+  .btn:hover{
+    background-color: #f1b91e;
+    color: black; 
+}
+.img-p-style{
+    width: 100%;
+    height: 100%;
+    padding-left: 127px;
+    text-align: left;
+    font-size: 16px;
+    font-family: 'Times New Roman';
+    padding-top: none;
+}
+
+
+

@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="product(css,js)/menu.css"/>
+    <link rel="stylesheet" href="product(css,js)/product-images.css"/>
+    <link rel="stylesheet" href="product(css,js)/main.css">
+    <script src="product(css,js)/main.js"></script>
+</head>
+<body>
+    <!--Menu Icon-->
+  <div class="header1">
+    <div onclick="myChange(this)"> 
+      <div class="container1" onclick="myFunction(this)">
+        <div class="bar1" style="margin-top: 40px"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div> 
+      </div>  
+    </div>
+    <img src="../Images/logo.png" alt="logo" style="width:430px; height: 110px; margin-top: -70px; z-index: 1 ;" >
+  </div>
+  <br>
+
+<section>
+<!-----------------------Menu.css (sản phẩm)------------------------------------------->
+    <div id="menu">
+ <ul>
+ <li><a href="Wood.html">Wood Handicrafts</a></li>
+ <li><a href="Brass.html">Brass Handicrafts</a></li>
+ <li><a href="Iron.html">Iron Handicrafts</a></li>
+ <li><a href="Glass.html">Glass Handicrafts</a></li>
+ <li><a href="Aluminum.html">Aluminium Handicrafts</a></li>
+ <li><a href="Decor.html">Handicrafts Decorative</a></li>
+ <li><a href="Tableware.html">Tables Wares</a></li>
+ <li><a href="Homedecor.html">Home Décor</a></li>
+ </ul>
+    </div>
+<!------------------------Title and search product----------------------------------------------->
+<nav class="navbar navbar-default" style="padding-bottom: 10px">
+    <div class="container-fluid">
+      <div class="navbar-header" style="padding-left: 2px">
+        <a class="navbar-brand" style="font-size: 40px; font-family: Arial; color: black">Aluminium Handicraft</a>
+      </div>
+      <ul class="nav navbar-nav"  style="float:right; padding-right: 65px; font-size: 12px">
+        <!---------------------Check box color------------------------------->
+        <li class="dropdown1"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Color <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li class=" keep-open">
+              <div class="checkbox">
+                  <label><input type="checkbox" value="">Natural Brown</label>
+                </div>
+            </li>
+            <li class=" keep-open">
+              <div class="checkbox">
+                  <label><input type="checkbox" value="">Natural Yellow</label>
+                </div>
+            </li>
+            <li class=" keep-open">
+              <div class="checkbox">
+                  <label><input type="checkbox" value="">Natural Blue</label>
+                </div>
+            </li>
+            <li class=" keep-open">
+              <div class="checkbox">
+                  <label><input type="checkbox" value="">Retro Red</label>
+                </div>
+            </li>
+            <li><a class="btn">select</a></li>
+          </ul>
+        </li>
+        <!-------------------Check box material---------------------------->
+        <li class="dropdown1"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Material<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li class=" keep-open">
+              <div class="checkbox">
+                  <label><input type="checkbox" value="">Alumi Osydi</label>
+                </div>
+            </li>
+            <li class=" keep-open">
+              <div class="checkbox">
+                  <label><input type="checkbox" value="">Alumi Crash</label>
+                </div>
+            </li>
+            <li class=" keep-open">
+              <div class="checkbox">
+                  <label><input type="checkbox" value="">Conclue Alumi</label>
+                </div>
+            </li>
+            <li><a class="btn">select</a></li>
+          </ul>
+        </li>
+        <!------------------------Check box concept------------------------------------------------------>
+        <li class="dropdown1"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Concept<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li class=" keep-open">
+              <div class="checkbox">
+                  <label><input type="checkbox" value="">Status</label>
+                </div>
+            </li>
+            <li class=" keep-open">
+              <div class="checkbox">
+                  <label><input type="checkbox" value="">Natural Hand</label>
+                </div>
+            </li>
+            <li class=" keep-open">
+              <div class="checkbox">
+                  <label><input type="checkbox" value="">Home Stay</label>
+                </div>
+            </li>
+            <li><a class="btn">select</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!--Jquery script-->
+      <script>
+        $('.keep-open').click(function(e) {
+          if (/input|label/i.test(e.target.tagName)){
+            var parent = $(e.target).parent();
+            if(parent.hasClass('checkbox')){
+              var checkbox = parent.find('input[type=checkbox]');
+              checkbox.prop("checked", !checkbox.prop("checked"));
+              return false;
+            }
+          }
+        });
+      </script>
+     
+    </div>
+ </nav>
+<!---------------------------Product-images.css (hình sản phẩm)------------------------------->
+<div class="grid-container">
+    
+       <div class="item1"> <!--Product 1-->
+           <div class="box-images">
+           <img src="../Images/Aluminium/image1.png" alt="Al1">
+           </div>
+           <div class="box-introduce">
+            LOVE AND SOUL<br>
+            AL 01
+           </div>
+           <div class="box-detail-buy">
+              <!-- button -->
+              <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Model-1">Detail</button>
+              <!-- Modal -->
+              <div class="modal fade" id="Model-1" role="dialog">
+              <div class="modal-dialog">
+              <!-- Modal content-->
+              <div class="modal-content">
+                  <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">LOVE AND SOUL</h4>
+                  </div>
+                <div class="modal-body" style="height: 500px; width: 500px">
+                  <div class="img-p-style">
+                    <img src="../Images/Aluminium/image1.png" alt="Al1">
+                    <p> 
+                      The <B>LOVE AND SOUL</B> was created in Israel. 
+                      The material was choosen carefully, in order to get a perfect shape.
+                      Meaning want to let GOD could guid your way to true love
+                    </p>
+                  </div>
+                </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+              </div>
+              </div>
+              </div>
+               <!--Inquiry-->
+               <a href="../orderform/Order.html" target="_blank" type="button" class="btn btn-lg" style="float: right">Inquiry</a>
+            </div>
+       </div>
+    <div class="item2"> <!--Product 2-->
+           <div class="box-images">
+           <img src="../Images/Aluminium/image2.png" alt="Al2">
+           </div>
+           <div class="box-introduce">
+            LOVE IS PAIN<br>
+            AL 02
+           </div>
+           <div class="box-detail-buy">
+            <!-- button -->
+            <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Model-2">Detail</button>
+            <!-- Modal -->
+            <div class="modal fade" id="Model-2" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">LOVE IS PAIN</h4>
+                </div>
+              <div class="modal-body" style="height: 500px; width: 500px">
+                <div class="img-p-style">
+                  <img src="../Images/Aluminium/image2.png" alt="AL2">
+                  <p> 
+                    <B>Love Is Pain</B>. As the name of this piece, it descibes the more love you get, the more
+                    painful you recieve. But come from 2 people, this is <i>true love</i>
+                  </p>
+                </div>
+              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+            </div>
+            </div>
+             <!--Inquiry-->
+             <a href="../orderform/Order.html" target="_blank" type="button" class="btn btn-lg" style="float: right">Inquiry</a>
+          </div>
+    </div>  
+    <div class="item3"> <!--Product 3-->
+           <div class="box-images">
+           <img src="../Images/Aluminium/image3.png" alt="AL3">
+           </div>
+           <div class="box-introduce">
+            BIRD FIGURINES<br>
+            AL 3
+           </div>
+           <div class="box-detail-buy">
+            <!-- button -->
+            <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Modal-3">Detail</button>
+            <!-- Modal -->
+            <div class="modal fade" id="Modal-3" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">BIRD FIGURINES</h4>
+                </div>
+              <div class="modal-body" style="height: 500px; width: 500px">
+                <div class="img-p-style">
+                  <img src="../Images/Aluminium/image3.png" alt="AL3">
+                  <p> 
+                    The <B>Bird Figurines</B> are designed to spruce up the look of your room. These curios are perfectly styled 
+                    with care and detailing, in interesting colours and shapes 
+                    that are sure to keep you coming back for more. 
+                  </p>
+                </div>
+              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+            </div>
+            </div>
+             <!--Inquiry-->
+             <a href="../orderform/Order.html" target="_blank" type="button" class="btn btn-lg" style="float: right">Inquiry</a>
+          </div>
+    </div>
+    <div class="item4"> <!--product 4-->
+           <div class="box-images">
+           <img src="../Images/Aluminium/image4.png" alt="AL 4">
+           </div>
+           <div class="box-introduce">
+            SCULPTURAL DRAWING<br>
+            AL 4
+           </div>
+           <div class="box-detail-buy">
+            <!-- button -->
+            <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Modal-4">Detail</button>
+            <!-- Modal -->
+            <div class="modal fade" id="Modal-4" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">SCULPTURAL DRAWING</h4>
+                </div>
+              <div class="modal-body" style="height: 500px; width: 500px">
+                <div class="img-p-style">
+                  <img src="../Images/Aluminium/image4.png" alt="HL06">
+                  <p> 
+                    The <B>Sculptural Drawing</B> by christina james nielsen: Presentation of sculptural drawings
+                  </p>
+                </div>
+              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+            </div>
+            </div>
+             <!--Inquiry-->
+             <a href="../orderform/Order.html" target="_blank" type="button" class="btn btn-lg" style="float: right">Inquiry</a>
+          </div>
+    </div>
+    <div class="item5"> <!--Product 5-->
+           <div class="box-images">
+           <img src="../Images/Aluminium/image5.png" alt="CG07">
+           </div>
+           <div class="box-introduce">
+            MEDITATION<br>
+            AL 5
+           </div>
+           <div class="box-detail-buy">
+            <!-- button -->
+            <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Modal-5">Detail</button>
+            <!-- Modal -->
+            <div class="modal fade" id="Modal-5" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">MEDITATION</h4>
+                </div>
+              <div class="modal-body" style="height: 500px; width: 500px">
+                <div class="img-p-style">
+                  <img src="../Images/Aluminium/image5.png" alt="CG07">
+                  <p> 
+                    The <B>Meditation</B> was made from Indian Handicraftman. As the history of it,
+                    meditate is a method that could help peace your soul. This furniture coul bring you to the 
+                    peaceful feeling.
+                  </p>
+                </div>
+              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+            </div>
+            </div>
+             <!--Inquiry-->
+             <a href="../orderform/Order.html" target="_blank" type="button" class="btn btn-lg" style="float: right">Inquiry</a>
+          </div>
+    </div>
+    <div class="item6"> <!--Product 6-->
+           <div class="box-images">
+           <img src="../Images/Aluminium/image6.png" alt="AL 6">
+           </div>
+           <div class="box-introduce">
+            LAURIDS LONBORG<br>
+            AL 6
+           </div>
+           <div class="box-detail-buy">
+            <!-- button -->
+            <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Modal-6">Detail</button>
+            <!-- Modal -->
+            <div class="modal fade" id="Modal-6" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">LAURIDS LONBORG</h4>
+                </div>
+              <div class="modal-body" style="height: 500px; width: 500px">
+                <div class="img-p-style">
+                  <img src="../Images/Aluminium/image6.png" alt="TB08">
+                  <p> 
+                    The <B>LAURIDS LONBORG</B>. Full name of this piece is Vintage 1960s Danish Laurids Lonborg candle holder. 
+                    This Scandinavian black metal and wicker candelabra is in very good condition and just 100 pieces in the world.
+                  </p>
+                </div>
+              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+            </div>
+            </div>
+             <!--Inquiry-->
+             <a href="../orderform/Order.html" target="_blank" type="button" class="btn btn-lg" style="float: right">Inquiry</a>
+          </div>
+    </div>
+    <div class="item7"> <!--product 7-->
+           <div class="box-images">
+           <img src="../Images/Aluminium/image7.png" alt="Al 7">
+           </div>
+           <div class="box-introduce">
+            FREEDOM<br>
+            AL 7
+           </div>
+           <div class="box-detail-buy">
+            <!-- button -->
+            <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Modal-7">Detail</button>
+            <!-- Modal -->
+            <div class="modal fade" id="Modal-7" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">FREEDOM</h4>
+                </div>
+              <div class="modal-body" style="height: 500px; width: 500px">
+                <div class="img-p-style">
+                  <img src="../Images/Aluminium/image7.png" alt="PSG09">
+                  <p> 
+                    The <B>FREEDOM</B>. Decribing by sculptural, A Great Horned Owl is just taking off from his perch to go hunting.
+                     Watch out for those talons – <q>They’re sharp!</q>
+                  </p>
+                </div>
+              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+            </div>
+            </div>
+             <!--Inquiry-->
+             <a href="../orderform/Order.html" target="_blank" type="button" class="btn btn-lg" style="float: right">Inquiry</a>
+          </div>
+    </div>  
+    <div class="item8"> <!--Product 8-->
+           <div class="box-images">
+           <img src="../Images/Aluminium/image8.png" alt="AL 8">
+           </div>
+           <div class="box-introduce">
+            PHILIP WAKEHAM<br>
+            AL 8
+           </div>
+           <div class="box-detail-buy">
+            <!-- button -->
+            <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Modal-8">Detail</button>
+            <!-- Modal -->
+            <div class="modal fade" id="Modal-8" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">PHILIP WAKEHAM</h4>
+                </div>
+              <div class="modal-body" style="height: 500px; width: 500px">
+                <div class="img-p-style">
+                  <img src="../Images/Aluminium/.png" alt="CO 21">
+                  <p> 
+                    The <B>Philip Wakeham</B> is a 5th piece from Philip. Philip Wakeham is a Self taught 
+                    contemporary figurative sculptor working exclusively in Bronze. And this scultural is describing himself from
+                    falling of life, depressed and stressful.
+                </div>
+              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+            </div>
+            </div>
+             <!--Inquiry-->
+             <a href="../orderform/Order.html" target="_blank" type="button" class="btn btn-lg" style="float: right">Inquiry</a>
+          </div>
+    </div>
+
+  </div>
+</section>
+<section class="underbackground">
+  <q>An art you know,
+     A little soul you found</q><br>
+    <cite>-Henry Venus-</cite>
+</section>
+
+<!--FOOTER -->
+<footer >
+    <div class="row">
+        <div class="col-lg-3">
+        <img src="../Images/logo.png" alt="logo" height="80px">
+      </div>
+      <div class="col-lg-3">
+        <p> <span class="glyphicon glyphicon-envelope"></span> <br>
+          Email <br>
+          service@venushandicraft.com</p> 
+        <p> <span class="glyphicon glyphicon-map-marker"></span> <br>
+          Address <br>
+          Traditional Village, Thanh Hoa Province, Viet Nam</p> 
+      </div>
+      <div class="col-lg-2">
+        <p> <a href="../../HOME/home.html">Home</a> </p>
+        <p> <a href="Wood.html">All product</a> </p>
+        <p> <a href="../../STORY/company.html">Company</a> </p>
+        <p> <a href="../../STORY/craftmanship.html">Craftmanship</a> </p>
+      </div>
+      <div class="col-lg-2">
+        <p> <a href="../Gallery/Gallery.html">Gallery</a> </p>
+        <p> <a href="../../SITEMAP/sitemap.html">Site Map</a> </p>
+        <p> <a href="../../CONTACTUS/contactus.html">Contact Us</a> </p>
+        <p> <a href="../../STORY/founder.html">Founder</a></p>
+        
+      </div>
+      <div class="col-lg-2">
+        <p>More</p>
+        <p> <a target="_blank" href="../../CONTACTUS/signup.html">Login</a> </p>
+        <p> <a target="_blank" href="../../CONTACTUS/trade.html">Trade B2B</a> </p>
+      </div>
+    </div>
+    </footer>
+  
+  <!--NAVBAR Footer -->
+      <div class="row">
+        <div class="side" id="open">
+               <div class="col-lg-7" >
+              <a class="a1" href="../../HOME/home.html">Home</a>
+              <div class="dropdown">
+              <a class="a1" href="Wood.html">All Products</a>
+              <div class="dropdown-content">
+                <a href="Wood.html">Wood Handicraft</a> 
+                <a href="Brass.html">Brass Handicraft</a>
+                <a href="Iron.html">IronHandicraft</a> 
+                <a href="Wood.html">Glass Handicraft</a>
+                <a href="Wood.html">AluminumHandicraft</a> 
+                <a href="Decor.html">Handicraft Dicorative</a>
+                <a href="Tableware.html">Table Wares</a>
+                <a href="Homedecor.html">Home Décor</a>
+                </div>
+              </div> <br>
+              <div class="dropdown" style="padding-right: 100px;">
+                <a class="a1" target="_blank" href="../../STORY/company.html">Story</a>
+                <div class="dropdown-content">
+                <a target="_blank" href="../../STORY/company.html">Company</a> <br>
+                <a target="_blank" href="../../STORY/craftmanship.html">Craftmanship</a>
+                </div>
+              </div>
+              
+              <a class="a1" target="_blank" href="../Gallery/Gallery.html">Gallery</a>
+              <a class="a1" target="_blank" href="../../SITEMAP/sitemap.html">Site Map</a>
+              <a class="a1" target="_blank" href="../../CONTACTUS/contactus.html">Contact Us</a>
+               </div>
+          
+        <div class="col-lg-4" style="color: black; font-size: 20px; padding-top: 20px;"  >
+           <p style="margin-left: 150px;"> <span class="glyphicon glyphicon-envelope"></span> <br>
+              Email <br>
+              service@venushandicraft.com</p> 
+            <p style="margin-left: 150px;"> <span class="glyphicon glyphicon-map-marker"></span> <br>
+              Address <br>
+              Traditional Village, Thanh Hoa Province, Viet Nam</p> 
+        </div>
+        </div>
+       </div>
+
+</body>
+</html>

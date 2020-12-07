@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="product(css,js)/menu.css"/>
+    <link rel="stylesheet" href="product(css,js)/product-images.css"/>
+    <link rel="stylesheet" href="product(css,js)/main.css">
+    <script src="product(css,js)/main.js"></script>
+
+</head>
+<body>
+    <!--Menu Icon-->
+  <div class="header1">
+    <div onclick="myChange(this)"> 
+      <div class="container1" onclick="myFunction(this)">
+        <div class="bar1" style="margin-top: 40px"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div> 
+      </div>  
+    </div>
+    <img src="../Images/logo.png" alt="logo" style="width:430px; height: 110px; margin-top: -70px; z-index: 1 ;" >
+  </div>
+  <br>
+ 
+<section>
+<!-----------------------Menu.css (sản phẩm)------------------------------------------->
+    <div id="menu">
+ <ul>
+  <li><a href="Wood.html">Wood Handicrafts</a></li>
+ <li><a href="Brass.html">Brass Handicrafts</a></li>
+ <li><a href="Iron.html">Iron Handicrafts</a></li>
+ <li><a href="Glass.html">Glass Handicrafts</a></li>
+ <li><a href="Aluminum.html">Aluminium Handicrafts</a></li>
+ <li><a href="Decor.html">Handicrafts Decorative</a></li>
+ <li><a href="Tableware.html">Tables Wares</a></li>
+ <li><a href="Homedecor.html">Home Décor</a></li>
+ </ul>
+    </div>
+<!------------------------Title and search product----------------------------------------------->
+<nav class="navbar navbar-default" style="padding-bottom: 10px">
+    <div class="container-fluid">
+      <div class="navbar-header" style="padding-left: 2px">
+        <a class="navbar-brand" style="font-size: 40px; font-family: Arial; color: black">Iron Handicraft</a>
+      </div>
+      <ul class="nav navbar-nav"  style="float:right; padding-right: 65px; font-size: 12px">
+        <!---------------------Check box color------------------------------->
+        <li class="dropdown1"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Color <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li class=" keep-open">
+              <div class="checkbox">
+                  <label><input type="checkbox" value="">Natural Brown</label>
+                </div>
+            </li>
+            <li class=" keep-open">
+              <div class="checkbox">
+                  <label><input type="checkbox" value="">Natural Yellow</label>
+                </div>
+            </li>
+            <li class=" keep-open">
+              <div class="checkbox">
+                  <label><input type="checkbox" value="">Natural Blue</label>
+                </div>
+            </li>
+            <li class=" keep-open">
+              <div class="checkbox">
+                  <label><input type="checkbox" value="">Retro Red</label>
+                </div>
+            </li>
+            <li><a class="btn">select</a></li>
+          </ul>
+        </li>
+        <!-------------------Check box material---------------------------->
+        <li class="dropdown1"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Material<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li class=" keep-open">
+              <div class="checkbox">
+                  <label><input type="checkbox" value="">Iron Osydi</label>
+                </div>
+            </li>
+            <li class=" keep-open">
+              <div class="checkbox">
+                  <label><input type="checkbox" value="">Iron Damacus</label>
+                </div>
+            </li>
+            <li class=" keep-open">
+              <div class="checkbox">
+                  <label><input type="checkbox" value="">Conclue Iron</label>
+                </div>
+            </li>
+            <li><a class="btn">select</a></li>
+          </ul>
+        </li>
+        <!------------------------Check box concept------------------------------------------------------>
+        <li class="dropdown1"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Concept<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li class=" keep-open">
+              <div class="checkbox">
+                  <label><input type="checkbox" value="">India God</label>
+                </div>
+            </li>
+            <li class=" keep-open">
+              <div class="checkbox">
+                  <label><input type="checkbox" value="">Natural Hand</label>
+                </div>
+            </li>
+            <li class=" keep-open">
+              <div class="checkbox">
+                  <label><input type="checkbox" value="">Home Stay</label>
+                </div>
+            </li>
+            <li><a class="btn">select</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!--Jquery script-->
+      <script>
+        $('.keep-open').click(function(e) {
+          if (/input|label/i.test(e.target.tagName)){
+            var parent = $(e.target).parent();
+            if(parent.hasClass('checkbox')){
+              var checkbox = parent.find('input[type=checkbox]');
+              checkbox.prop("checked", !checkbox.prop("checked"));
+              return false;
+            }
+          }
+        });
+      </script>
+
+    </div>
+ </nav>
+<!---------------------------Product-images.css (hình sản phẩm)------------------------------->
+<div class="grid-container">
+    
+       <div class="item1"> <!--Product 1-->
+           <div class="box-images">
+           <img src="../Images/Iron/image1.png" alt="IET201">
+           </div>
+           <div class="box-introduce">
+            IRON EFIL TOWER <br>
+            IET 201
+           </div>
+           <div class="box-detail-buy">
+              <!-- button -->
+              <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Model-1">Detail</button>
+              <!-- Modal -->
+              <div class="modal fade" id="Model-1" role="dialog">
+              <div class="modal-dialog">
+              <!-- Modal content-->
+              <div class="modal-content">
+                  <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">IRON EFIL TOWER</h4>
+                  </div>
+                <div class="modal-body" style="height: 500px; width: 500px">
+                  <div class="img-p-style">
+                    <img src="../Images/Iron/image1.png" alt="IET 201">
+                    <p> 
+                      The <B>Iron Eiffel Tower</B> was mad by 
+                      engineer <I>Gustave Eiffel</I>. All of the material
+                      constructed from 1887 to 1889. The iron outside of it make your house more luxury.
+                    </p>
+                  </div>
+                </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+              </div>
+              </div>
+              </div>
+              <!--Inquiry-->
+              <a href="../orderform/Order.html" target="_blank" type="button" class="btn btn-lg" style="float: right">Inquiry</a>
+            </div>
+       </div>
+    <div class="item2"> <!--Product 2-->
+           <div class="box-images">
+           <img src="../Images/Iron/image2.png" alt="DP202">
+           </div>
+           <div class="box-introduce">
+            DISNEY PUMPKIN <br>
+            DP 202
+           </div>
+           <div class="box-detail-buy">
+            <!-- button -->
+            <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Model-2">Detail</button>
+            <!-- Modal -->
+            <div class="modal fade" id="Model-2" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">DISNEY PUMPKIN</h4>
+                </div>
+              <div class="modal-body" style="height: 500px; width: 500px">
+                <div class="img-p-style">
+                  <img src="../Images/Iron/image2.png" alt="DP 202">
+                  <p> 
+                    The <B>Disney Pumpkin</B> was a carriage made for
+                    <I>Cinderella</I> by her Fairy Godmother. At the stroke
+                    midnight, it will turn back.
+                  </p>
+                </div>
+              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+            </div>
+            </div>
+             <!--Inquiry-->
+             <a href="../orderform/Order.html" target="_blank" type="button" class="btn btn-lg" style="float: right">Inquiry</a>
+          </div>
+    </div>  
+    <div class="item3"> <!--Product 3-->
+           <div class="box-images">
+           <img src="../Images/Iron/image3.jpg" alt="RB203">
+           </div>
+           <div class="box-introduce">
+            RETRO BIKE<br>
+            RB 203
+           </div>
+           <div class="box-detail-buy">
+            <!-- button -->
+            <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Modal-3">Detail</button>
+            <!-- Modal -->
+            <div class="modal fade" id="Modal-3" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">RETRO BIKE</h4>
+                </div>
+              <div class="modal-body" style="height: 500px; width: 500px">
+                <div class="img-p-style">
+                  <img src="../Images/Iron/image3.jpg" alt="RB 203">
+                  <p> 
+                    The <B>Retro Bike</B> Brand new for 2018 the <I>Kawasaki Z900RS </I>
+                    is a bit of a game changer and is truly a work of art
+                  </p>
+                </div>
+              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+            </div>
+            </div>
+             <!--Inquiry-->
+             <a href="../orderform/Order.html" target="_blank" type="button" class="btn btn-lg" style="float: right">Inquiry</a>
+          </div>
+    </div>
+    <div class="item4"> <!--product 4-->
+           <div class="box-images">
+           <img src="../Images/Iron/image4.png" alt="SCH204">
+           </div>
+           <div class="box-introduce">
+            STANDING CANDLE HUMAN<br>
+            SCH 204
+           </div>
+           <div class="box-detail-buy">
+            <!-- button -->
+            <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Modal-4">Detail</button>
+            <!-- Modal -->
+            <div class="modal fade" id="Modal-4" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">STANDING CANDLE HUMAN</h4>
+                </div>
+              <div class="modal-body" style="height: 500px; width: 500px">
+                <div class="img-p-style">
+                  <img src="../Images/Iron/image4.png" alt="SCH 204">
+                  <p> 
+                    The <B>Standing candle human</B>, Our Floor Standing Candle Holder 
+                    cradles candles in beautiful <i>gold</i> and<i> silver</i>, greatly illuminating the space.
+                  </p>
+                </div>
+              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+            </div>
+            </div>
+             <!--Inquiry-->
+             <a href="../orderform/Order.html" target="_blank" type="button" class="btn btn-lg" style="float: right">Inquiry</a>
+          </div>
+    </div>
+    <div class="item5"> <!--Product 5-->
+           <div class="box-images">
+           <img src="../Images/Iron/image5.png" alt="WAOF205">
+           </div>
+           <div class="box-introduce">
+            WE ARE ONE FAMI<br>
+            WAOF 205
+           </div>
+           <div class="box-detail-buy">
+            <!-- button -->
+            <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Modal-5">Detail</button>
+            <!-- Modal -->
+            <div class="modal fade" id="Modal-5" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">WE ARE ONE FAMI</h4>
+                </div>
+              <div class="modal-body" style="height: 500px; width: 500px">
+                <div class="img-p-style">
+                  <img src="../Images/Iron/image5.png" alt="WAOF205">
+                  <p> 
+                    The <B>We Are One Fami</B> as you can see. It was designed by <i>Oliver Grand</i><br>
+                    This masterpiece was sold off from the beginning, their message is strong enough
+                    to tie everyone.
+                  </p>
+                </div>
+              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+            </div>
+            </div>
+             <!--Inquiry-->
+             <a href="../orderform/Order.html" target="_blank" type="button" class="btn btn-lg" style="float: right">Inquiry</a>
+          </div>
+    </div>
+    <div class="item6"> <!--Product 6-->
+           <div class="box-images">
+           <img src="../Images/Iron/image6.png" alt="BL206">
+           </div>
+           <div class="box-introduce">
+            BUDDHA LOTUS<br>
+            BL 206
+           </div>
+           <div class="box-detail-buy">
+            <!-- button -->
+            <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Modal-6">Detail</button>
+            <!-- Modal -->
+            <div class="modal fade" id="Modal-6" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">BUDDHA LOTUS</h4>
+                </div>
+              <div class="modal-body" style="height: 500px; width: 500px">
+                <div class="img-p-style">
+                  <img src="../Images/Iron/image6.png" alt="BL206">
+                  <p> 
+                    The <B>Budha Lotus</B>. According to legend, everywhere the baby Buddha stepped,
+                    a lotus flower bloomed. The famed <i>Lotus Sutra</i> 
+                    is one of the most important texts of <b>Mahayana Buddhism</b>.
+                  </p>
+                </div>
+              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+            </div>
+            </div>
+             <!--Inquiry-->
+             <a href="../orderform/Order.html" target="_blank" type="button" class="btn btn-lg" style="float: right">Inquiry</a>
+          </div>
+    </div>
+    <div class="item7"> <!--product 7-->
+           <div class="box-images">
+           <img src="../Images/Iron/image7.png" alt="IKJ207">
+           </div>
+           <div class="box-introduce">
+            INDIA KAMI JOU<br>
+            IKJ 207
+           </div>
+           <div class="box-detail-buy">
+            <!-- button -->
+            <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Modal-7">Detail</button>
+            <!-- Modal -->
+            <div class="modal fade" id="Modal-7" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">INDIA KAMI JOU</h4>
+                </div>
+              <div class="modal-body" style="height: 500px; width: 500px">
+                <div class="img-p-style">
+                  <img src="../Images/Iron/image7.png" alt="IKJ207">
+                  <p> 
+                    The <B>India Kami Jou</B>, also known as a divinity and royalty sumbol. 
+                    A traditional symbol of divinity and royalty. For centuries, India has regarded the majestic royal beast,
+                     <i>the Elephent</i>.
+                  </p>
+                </div>
+              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+            </div>
+            </div>
+             <!--Inquiry-->
+             <a href="../orderform/Order.html" target="_blank" type="button" class="btn btn-lg" style="float: right">Inquiry</a>
+          </div>
+    </div>  
+    <div class="item8"> <!--Product 8-->
+           <div class="box-images">
+           <img src="../Images/Iron/image8.png" alt="none">
+           </div>
+           <div class="box-introduce">
+            DANCING KAMI<br>
+            DK 208
+           </div>
+           <div class="box-detail-buy">
+            <!-- button -->
+            <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Modal-8">Detail</button>
+            <!-- Modal -->
+            <div class="modal fade" id="Modal-8" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">DANCING KAMI</h4>
+                </div>
+              <div class="modal-body" style="height: 500px; width: 500px">
+                <div class="img-p-style">
+                  <img src="../Images/Iron/image8.png" alt="SCH 204">
+                  <p> 
+                    The <B>Dancing kami</B> was made by a popular Craftman-<i>Shlik Scope</i>.
+                    The sculpture is symbolic of Shiva as the lord of dance and dramatic arts.
+                    It typically shows Shiva dancing in one of the Natya Shastra 
+                  </p>
+                </div>
+              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+            </div>
+            </div>
+             <!--Inquiry-->
+             <a href="../orderform/Order.html" target="_blank" type="button" class="btn btn-lg" style="float: right">Inquiry</a>
+          </div>
+    </div>
+
+  </div>
+</section> <!--Fun ad-->
+<section class="underbackground">
+  <q>An art you know,
+     A little soul you found</q><br>
+    <cite>-Henry Venus-</cite>
+</section>
+
+<!--FOOTER -->
+<footer >
+  <div class="row">
+      <div class="col-lg-3">
+      <img src="../Images/logo.png" alt="logo" height="80px">
+    </div>
+    <div class="col-lg-3">
+      <p> <span class="glyphicon glyphicon-envelope"></span> <br>
+        Email <br>
+        service@venushandicraft.com</p> 
+      <p> <span class="glyphicon glyphicon-map-marker"></span> <br>
+        Address <br>
+        Traditional Village, Thanh Hoa Province, Viet Nam</p> 
+    </div>
+    <div class="col-lg-2">
+      <p> <a href="../../HOME/home.html">Home</a> </p>
+      <p> <a href="Wood.html">All product</a> </p>
+      <p> <a href="../../STORY/company.html">Company</a> </p>
+      <p> <a href="../../STORY/craftmanship.html">Craftmanship</a> </p>
+    </div>
+    <div class="col-lg-2">
+      <p> <a href="../Gallery/Gallery.html">Gallery</a> </p>
+      <p> <a href="../../SITEMAP/sitemap.html">Site Map</a> </p>
+      <p> <a href="../../CONTACTUS/contactus.html">Contact Us</a> </p>
+      <p> <a href="../../STORY/founder.html">Founder</a></p>
+      
+    </div>
+    <div class="col-lg-2">
+      <p>More</p>
+      <p> <a target="_blank" href="../../CONTACTUS/signup.html">Login</a> </p>
+      <p> <a target="_blank" href="../../CONTACTUS/trade.html">Trade B2B</a> </p>
+    </div>
+  </div>
+  </footer>
+
+<!--NAVBAR Footer -->
+    <div class="row">
+      <div class="side" id="open">
+             <div class="col-lg-7" >
+            <a class="a1" href="../../HOME/home.html">Home</a>
+            <div class="dropdown">
+            <a class="a1" href="Wood.html">All Products</a>
+            <div class="dropdown-content">
+              <a href="Wood.html">Wood Handicraft</a> 
+              <a href="Brass.html">Brass Handicraft</a>
+              <a href="Iron.html">IronHandicraft</a> 
+              <a href="Wood.html">Glass Handicraft</a>
+              <a href="Wood.html">AluminumHandicraft</a> 
+              <a href="Decor.html">Handicraft Dicorative</a>
+              <a href="Tableware.html">Table Wares</a>
+              <a href="Homedecor.html">Home Décor</a>
+              </div>
+            </div> <br>
+            <div class="dropdown" style="padding-right: 100px;">
+              <a class="a1" target="_blank" href="../../STORY/company.html">Story</a>
+              <div class="dropdown-content">
+              <a target="_blank" href="../../STORY/company.html">Company</a> <br>
+              <a target="_blank" href="../../STORY/craftmanship.html">Craftmanship</a>
+              </div>
+            </div>
+            
+            <a class="a1" target="_blank" href="../Gallery/Gallery.html">Gallery</a>
+            <a class="a1" target="_blank" href="../../SITEMAP/sitemap.html">Site Map</a>
+            <a class="a1" target="_blank" href="../../CONTACTUS/contactus.html">Contact Us</a>
+             </div>
+        
+      <div class="col-lg-4" style="color: black; font-size: 20px; padding-top: 20px;"  >
+         <p style="margin-left: 150px;"> <span class="glyphicon glyphicon-envelope"></span> <br>
+            Email <br>
+            service@venushandicraft.com</p> 
+          <p style="margin-left: 150px;"> <span class="glyphicon glyphicon-map-marker"></span> <br>
+            Address <br>
+            Traditional Village, Thanh Hoa Province, Viet Nam</p> 
+      </div>
+      </div>
+     </div>
+
+</body>
+</html>
