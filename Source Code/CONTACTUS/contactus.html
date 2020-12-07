@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <script src="contact.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+  <!--Menu Icon-->
+  <div class="header1">
+    <div class = col-lg-10>
+      <img src="logo.png" alt="logo" height="80px" style="margin-top: -3%">
+    </div>
+     <div class = " col-lg-2">
+        <div class="container1" onclick="myChange(this)"> 
+        <div class="container1" onclick="myFunction(this)" style="float: left; margin-left: 10px; margin-top: -70%;">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div> 
+    </div>
+  </div>
+</div>
+</div>
+ <!--COMPANY IMAGE -->
+ <div class="grid-container">
+  <div>CONTACT US</div>       
+</div> <br>
+<!--HISTORY -->
+  <div class="container">
+    <div class="row">
+        <div id="card" class="col-lg-4" >
+            <span class="glyphicon glyphicon-earphone" style="font-size: 25px;"></span>
+            <h3>Phone</h3>
+            <p  style="text-align: center;">+  84 915 709 666  / +  84 906 756 989</p>
+        </div>
+        <div id="card" class="col-lg-4">
+            <span class="glyphicon glyphicon-envelope" style="font-size: 25px;"></span>
+            <h3>1980s - 1990s</h3>
+            <p  style="text-align: center;">service@venushandicraft.com</p>
+        </div>
+        <div id="card" class="col-lg-4">
+            <span class="glyphicon glyphicon-map-marker" style="font-size: 25px;"></span>
+            <h3>Address</h3>
+            <p style="text-align: center;">Traditional Village, Thanh Hoa Province, Viet Nam</p>
+        </div>
+    </div>
+</div>
+<!--Arrange a meeting or call with us?-->
+<div class="container" style="background-color: rgb(243, 216, 167);  padding: 50px;"> 
+    <div class="row">
+        <div class="col-lg-4" >
+            <span style="font-size: 35px;">Arrange a meeting or call with us?</span>
+        </div>
+        <div class="col-lg-8" >
+            <form  action="" name="dk2" onsubmit="return FormContact()">
+                <table class="contactform">
+                    <tr>
+                        <td>Name<span style="color: red;">* </span> </td> 
+                          
+                    </tr>
+                    <tr>
+                        <td> <input type="text" name="ten" id="textname"> <hr> </td> 
+                       
+                    </tr>
+                    <tr>
+                      <td><span id="demoarrange"></span></td>
+                    </tr>
+                    <tr>
+                        <td >Email<span style="color: red;">* </span> 
+                            <br>
+                            <h4>Company email address is preferable.</h4>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="emaila" id="textemail"> <hr></td> 
+                        
+                    </tr>
+                    <tr>
+                      <td><span id="demoarrange1"></span></td>
+                    </tr>
+                    <tr>
+                        <td >Message<span style="color: red;">* </span> 
+                            <br>
+                            <h4>Please let us know your more about your business and any inquiries you would love to ask here with thanks.</h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <textarea name="M1" id="me" cols="50" rows="2"></textarea>
+                         <hr></td> 
+                    </tr>
+                    <tr>
+                      <td><span id="demoarrange2"></span></td>
+                    </tr>
+                    <tr align="center" >
+                        <td><button type="submit" class="buttoncontact" style="width: 20%;">Send</button></td>
+                    </tr>
+                    
+                </table>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4" >
+          <span style="font-size: 35px;">Become Our Trade Partners</span>
+      </div>
+      <div class="col-lg-8" >
+          <p>
+            This digital ordering platform is our way to enhance customer experience. <br>
+
+            Our customers can browse hundreds of potential products, make comparisions,
+             choose the optimal shipping and payment options, send purchashing orders and manage their purchases just easyly with few clicks.
+              We think we should preserve tradition in innovative ways. <br>
+
+              <span class="glyphicon glyphicon-ok"> Easy Buying Process </span> <br>
+              <span class="glyphicon glyphicon-ok" > Compare Shipping options </span> <br>
+              <span class="glyphicon glyphicon-ok" > Quick Ordering  </span><br>
+              <span class="glyphicon glyphicon-ok" > Negotiation </span> <br>
+              <span class="glyphicon glyphicon-ok" > Manage Order Status and History </span> <br>
+              <span class="glyphicon glyphicon-ok" > Exclusive offers</span> <br> <br>
+              <div align="center">
+                <form action="trade.html">
+                <button class="buttoncontact" style="width:40%;padding: 15px;border-radius: 15px;"> SIGN UP FOR B2B ACCOUNT</button>
+                </form>
+                
+                  
+            </div>
+          </p>
+    </div>
+    </div>  
+</div> <br>
+<!--FOOTER -->
+<footer >
+<div class="row">
+    <div class="col-lg-3">
+    <img src="logo.png" alt="logo" height="80px">
+  </div>
+  <div class="col-lg-3">
+    <p> <span class="glyphicon glyphicon-envelope"></span> <br>
+      Email <br>
+      service@venushandicraft.com</p> 
+    <p> <span class="glyphicon glyphicon-map-marker"></span> <br>
+      Address <br>
+      Traditional Village, Thanh Hoa Province, Viet Nam</p> 
+  </div>
+  <div class="col-lg-2">
+    <p> <a href="../HOME/home.html">Home</a> </p>
+    <p> <a href="">All product</a> </p>
+    <p> <a href="../STORY/company.html">Company</a> </p>
+    <p> <a href="../STORY/craftmanship.html">Craftmanship</a> </p>
+  </div>
+  <div class="col-lg-2">
+    <p> <a href="../PRODUCTGA/Gallery/Gallery.html">Gallery</a> </p>
+    <p> <a href="../SITEMAP/sitemap.html">Site Map</a> </p>
+    <p> <a href="contactus.html">Contact Us</a> </p>
+    <p> <a href="../STORY/founder.html">Founder</a> </p>
+  </div>
+  <div class="col-lg-2">
+    <p>More</p>
+    <p> <a href="signup.html">Login</a> </p>
+    <p> <a href="trade.html">Trade B2B</a> </p>
+  </div>
+</div>
+</footer>
+
+<!--NAVBAR -->
+    <div class="row">
+      <div class="side" id="open">
+             <div class="col-lg-7" >
+            <a class="a1" href="../HOME/home.html">Home</a>
+            <div class="dropdown">
+            <a class="a1" href="#">All Products</a>
+            <div class="dropdown-content">
+              <a href="../PRODUCTGA/Product/Wood.html">Wood Handicraft</a> 
+              <a href="../PRODUCTGA/Product/Brass.html">Brass Handicraft</a>
+              <a href="../PRODUCTGA/Product/iR\.html">IronHandicraft</a> 
+              <a href="../PRODUCTGA/Product/Wood.html">Glass Handicraft</a>
+              <a href="../PRODUCTGA/Product/Wood.html">AluminumHandicraft</a> 
+              <a href="../PRODUCTGA/Product/Decor.html">Handicraft Dicorative</a>
+              <a href="../PRODUCTGA/Product/Tableware.html">Table Wares</a>
+              <a href="../PRODUCTGA/Product/Homedecor.html">Home Décor</a>
+              </div>
+            </div> <br>
+            <div class="dropdown" style="padding-right: 100px;">
+              <a class="a1" href="#">Story</a>
+              <div class="dropdown-content">
+              <a href="../STORY/company.html">Company</a> <br>
+              <a href="../STORY/craftmanship.html">Craftmanship</a> <br>
+              <a href="../STORY/founder.html">Founder</a>
+              </div>
+            </div>
+            
+            <a class="a1" href="../PRODUCTGA/Gallery/Gallery.html">Gallery</a>
+            <a class="a1" href="../SITEMAP/sitemap.html">Site Map</a>
+            <a class="a1" href="contactus.html">Contact Us</a>
+          </div>
+        
+      <div class="col-lg-4" style="color: black; font-size: 20px; padding-top: 20px;" >
+         <p style="margin-left: 150px;"> <span class="glyphicon glyphicon-envelope"></span> <br>
+            Email <br>
+            service@viettrangcraft.com</p> 
+          <p style="margin-left: 150px;"> <span class="glyphicon glyphicon-map-marker"></span> <br>
+            Address <br>
+            Traditional Village, Thanh Hoa Province, Viet Nam</p> 
+      </div>
+        </div>
+        </div>
+</body>
+</html> 
