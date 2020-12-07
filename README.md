@@ -1,2 +1,2 @@
-# eProjectSem01_T12008E1_Venus-Handicrafts_Group2_Final-submit
-eProjectSem01_T12008E1_Venus Handicrafts_Group2_Final submit
+# eProjectSem01_T1.2008.E1_Venus-Handicrafts_Group02_Final-Submit
+eProjectSem01_T1.2008.E1_Venus-Handicrafts_Group02_Final-Submit
